@@ -25,7 +25,7 @@ class Equipe(Atleta):
         for atleta in self.atletas:
             print(atleta.nome)
     def contar(self):
-        return len(self.atletas)
+        print(len(self.atletas))
 
 atleta1 = Atleta("Lucas", 19, "futebol")
 atleta2 = Atleta("Ronaldo", 19, "futebol")
@@ -33,3 +33,4 @@ equip1 = Equipe("Flu")
 equip1.adicionar(atleta1)
 equip1.adicionar(atleta2)
 equip1.listar()
+equip1.contar()
